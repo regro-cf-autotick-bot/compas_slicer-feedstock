@@ -1,5 +1,5 @@
 {% set name = "compas_slicer" %}
-{% set version = "0.3.4" %}
+{% set version = "0.3.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/compas_slicer-{{ version }}.tar.gz
-  sha256: 537cee7df4bb842c902de8feeac23bd32715b5e993debb218514394ada6e143f
+  sha256: b64fcd2dfa636b20d15a6206dd6d461331795717bc706a21d578f96fd3df7728
 
 build:
   number: 0
