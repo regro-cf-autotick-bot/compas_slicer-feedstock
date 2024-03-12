@@ -1,11 +1,11 @@
-About compas_slicer
-===================
+About compas_slicer-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/compas_slicer-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/compas-dev/compas_slicer
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/compas_slicer-feedstock/blob/main/LICENSE.txt)
 
 Summary: Slicing package for FDM 3D Printing with COMPAS
 
@@ -95,7 +95,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
