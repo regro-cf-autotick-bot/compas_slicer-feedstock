@@ -7,18 +7,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/compas_slicer-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/compas_slicer-{{ version }}.tar.gz
   sha256: 7034ef4337438551a4b3e919c538f1fdc7faa8d57f0f97f6555114b62e3b8162
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - compas >=1.0.0
     - networkx
@@ -27,7 +27,7 @@ requirements:
     - pyclipper >=1.2.0
     - rdp
     - igl
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -36,6 +36,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/compas-dev/compas_slicer
